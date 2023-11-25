@@ -8,11 +8,11 @@ import 'package:happytech_clean_architecture/features/user/data/datasources/user
 import 'package:happytech_clean_architecture/features/user/domain/entities/user_entitiy.dart';
 import 'package:happytech_clean_architecture/features/user/domain/repositories/user_repository.dart';
 
-class UserREpositoryImpl extends UserRepository {
+class UserRepositoryImpl extends UserRepository {
   final NetworkInfo networkInfo;
   final UserRemoteDataSource remoteDataSource;
   final UserLocalDataSource localDataSource;
-  UserREpositoryImpl(
+  UserRepositoryImpl(
       {required this.remoteDataSource,
       required this.localDataSource,
       required this.networkInfo});
